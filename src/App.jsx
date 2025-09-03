@@ -6,6 +6,7 @@ import PersonajesSection from './components/personaje/PersonajesSection';
 import MecanicasSection from './components/mecanica/MecanicasSection';
 import JuegoSection from './components/juego/JuegoSection';
 import Login from './components/login/Login'; 
+import Register from "./components/register/Register";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           }
         />
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
     </BrowserRouter>
   );

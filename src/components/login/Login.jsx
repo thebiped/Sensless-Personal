@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Login.css";
 import zenithImg from "../../assets/img/background-login-zenith.png";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -58,8 +59,8 @@ const Login = () => {
             </div>
           </form>
           <div className="login-bottom anim-label" style={{ animationDelay: "0.8s" }}>
-            <span>¿Ya tienes una cuenta? </span>
-            <a href="#" className="login-link">Inicia Sesión</a>
+            <span>¿no tienes una cuenta? </span>
+            <Link to={"/register"} className="login-link">Registrarse</Link>
           </div>
         </div>
         <div className="login-image-section anim-img">

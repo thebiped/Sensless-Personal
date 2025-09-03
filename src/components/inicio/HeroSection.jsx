@@ -33,7 +33,11 @@ const HeroSection = () => {
             <a href="#historia"className="header-animate"style={{ animationDelay: "0.45s" }}>Historia</a>
             <a href="#personajes" className="header-animate" style={{ animationDelay: "0.6s" }}>Personajes</a>
             <a href="#mecanicas" className="header-animate" style={{ animationDelay: "0.75s" }}>Mecanicas</a>
-            <Link to="/login" className="nav-login-btn header-animate" style={{ animationDelay: "0.9s" }}>Login</Link>          </nav>
+          </nav>
+          <div className="action">
+            <Link to="/login" className="nav-login-btn header-animate" style={{ animationDelay: "0.9s" }}>Iniciar sesion</Link>
+            <Link to="/register" className="nav-register-btn header-animate" style={{ animationDelay: "0.9s" }}>Comenzar</Link>          
+          </div>
         </div>
       </header>
 

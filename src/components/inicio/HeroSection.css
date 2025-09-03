@@ -54,24 +54,43 @@
   gap: 2rem;
 }
 
+.nav-menu a {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: calc(0.8rem + 0.2vw);
+  font-weight: 400;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav-menu a:hover {color: #d6d6fc;}
+
+.header-container .action{
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
 .nav-login-btn {
   position: relative;
-  padding: 0.5em 1.5em;
-  background: transparent;
-  color: #e0e8ff;
-  border: none;
-  border-radius: 2em;
+  padding: 0.5em 1.2em;
   font-family: "Inter", sans-serif;
-  font-size: calc(0.9rem + 0.2vw);
+  font-size: calc(0.8rem + 0.2vw);
   font-weight: 600;
-  cursor: pointer;
+  color: #e0e8ff;
+  background: transparent;
+  border-radius: 2em;
+  border: 1px solid #ffffff;
   box-shadow: 0 0 0 0 transparent;
+  transition: background 0.3s, color 0.3s, transform 0.2s;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
-  transition: background 0.3s, color 0.3s, transform 0.2s;
   overflow: hidden;
+  cursor: pointer;
 }
+
 .nav-login-btn:hover {
+  color: #ffffff;
   background: rgb(61, 106, 255);
   box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
   -webkit-transition: all 0.2s ease-out;
@@ -110,17 +129,53 @@
   transition: box-shadow 0.2s ease-in;
 }
 
-.nav-menu a {
-  color: #fff;
-  font-family: "Inter", sans-serif;
+.nav-register-btn{
+  position: relative;
+  padding: 0.4rem 1.2rem;
   font-size: calc(0.8rem + 0.2vw);
-  font-weight: 400;
-  text-decoration: none;
-  transition: all 0.3s ease;
+  color: #fff;
+  background-color: #230ca8;
+  border: 1px solid #0e1081;
+  border-radius: 16px;
+  box-shadow: 2px 2px 3px #04174bb4;
+  transition: all .5s ease;
+  overflow: hidden;
+  cursor: pointer;
 }
 
-.nav-menu a:hover {color: #ececfc;}
 
+.nav-register-btn::before{
+  position: absolute;
+  content: '';
+  top: 7%;
+  left: 0%;
+  width: 0px;
+  height: 86%;
+  display: block;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+  opacity: 0;
+}
+
+.nav-register-btn:hover::before{
+  -webkit-animation: fadeLeft 0.5s 0s linear;
+  -moz-animation: fadeLeft 0.5s 0s linear;
+  animation: fadeLeft 0.5s 0s linear;
+}
+
+.nav-register-btn:hover{
+  color: #ddd;
+  background-color: #030431;
+  box-shadow: 0 0 4px #230ca8;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
 /* Hero Content */
 .hero-content {
   position: relative;
